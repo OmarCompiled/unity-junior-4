@@ -127,6 +127,7 @@
 -define:ENABLE_TILEMAP
 -define:ENABLE_TIMELINE
 -define:ENABLE_INPUT_SYSTEM
+-define:ENABLE_LEGACY_INPUT_MANAGER
 -define:TEXTCORE_FONT_ENGINE_1_5_OR_NEWER
 -define:TEXTCORE_TEXT_ENGINE_1_5_OR_NEWER
 -define:TEXTCORE_FONT_ENGINE_1_6_OR_NEWER
@@ -446,7 +447,10 @@
 -analyzer:"/home/omar/Unity/Hub/Editor/6000.3.2f1/Editor/Data/Tools/BuildPipeline/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll"
 -analyzer:"/home/omar/Unity/Hub/Editor/6000.3.2f1/Editor/Data/Tools/BuildPipeline/Unity.SourceGenerators/Unity.SourceGenerators.dll"
 -analyzer:"/home/omar/Unity/Hub/Editor/6000.3.2f1/Editor/Data/Tools/BuildPipeline/Unity.SourceGenerators/Unity.UIToolkit.SourceGenerator.dll"
+"Assets/Scripts/FocalPoint.cs"
+"Assets/Scripts/GameManager.cs"
 "Assets/Scripts/PlayerController.cs"
+"Assets/Scripts/SpawnManager.cs"
 -langversion:9.0
 /deterministic
 /optimize+
