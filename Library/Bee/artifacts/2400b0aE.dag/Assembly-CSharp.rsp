@@ -447,9 +447,11 @@
 -analyzer:"/home/omar/Unity/Hub/Editor/6000.3.2f1/Editor/Data/Tools/BuildPipeline/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll"
 -analyzer:"/home/omar/Unity/Hub/Editor/6000.3.2f1/Editor/Data/Tools/BuildPipeline/Unity.SourceGenerators/Unity.SourceGenerators.dll"
 -analyzer:"/home/omar/Unity/Hub/Editor/6000.3.2f1/Editor/Data/Tools/BuildPipeline/Unity.SourceGenerators/Unity.UIToolkit.SourceGenerator.dll"
+"Assets/Scripts/Enemy.cs"
 "Assets/Scripts/FocalPoint.cs"
 "Assets/Scripts/GameManager.cs"
 "Assets/Scripts/PlayerController.cs"
+"Assets/Scripts/Powerup.cs"
 "Assets/Scripts/SpawnManager.cs"
 -langversion:9.0
 /deterministic

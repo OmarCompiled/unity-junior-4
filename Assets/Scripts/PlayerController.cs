@@ -30,12 +30,28 @@ public class PlayerController : MonoBehaviour
     {
       ProcessMovement(Time.fixedDeltaTime);  
     }
+    
+    void Update()
+    {
+        if(transform.position.y < -20.0f)
+        {
+            GameManager.Instance.GameOver = true;
+        }
+    }
 
     void ProcessMovement(float deltaTime)
     {
         Vector2 movementInput = moveAction.ReadValue<Vector2>();
-        Vector3 movement = focalPoint.forward * movementInput.y;
-        movement /= deltaTime * 4.0f;
+        Vector3 movement;
+        if(!GameManager.Instance.LockCamera)
+        {
+            movement = focalPoint.forward * movementInput.y;
+        }
+        else
+        {
+            movement = (focalPoint.forward * movementInput.y) + (focalPoint.right * movementInput.x);
+        }
+        movement /= 4.0f * deltaTime;
         rigidbody.AddForce(movement);
     }
 
